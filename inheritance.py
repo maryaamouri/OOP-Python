@@ -44,3 +44,24 @@ ds = Designer("Ali",22,4000)
 ds.work()
 se.work()
 ds.draw()
+
+# ----------------------------
+
+# Polymorphism 
+# when the objects are behaves like parents where each one still have his functionality 
+
+employees = [
+    SoftwareEngineer("Marya",22,7000,"Senior"),
+    SoftwareEngineer("Sami",22,7000,"Junior"),
+    Designer("Ali",22,4000)
+]
+
+
+def motivate_employees(employees):
+    for emp in employees:
+        emp.work()
+
+motivate_employees(employees)
+
+# ----------------------------------
+
