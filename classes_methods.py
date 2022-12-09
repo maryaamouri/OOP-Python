@@ -55,6 +55,16 @@ class SoftwareEngineer:
         return self.level == other.level
 
 
+    # class methods or static methods
+    # these methods can't be called using objects, because it dos'nt have self attributes
+    @staticmethod
+    def entry_salary(age):
+        if age>25:
+            return 5000
+        if age<30:
+            return 7000
+        return 9000
+
 
 
 
