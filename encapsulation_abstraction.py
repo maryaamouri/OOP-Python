@@ -41,3 +41,7 @@ print(se.get_salary())
 # we can check the value, or add constrains
 # add password
 
+# ----------------------
+# abstraction
+# hiding the implementation of the class 
+#  
