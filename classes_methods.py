@@ -32,14 +32,38 @@ class SoftwareEngineer:
     def code(self):
         print(f"{self.name} is writing code ..")
 
-    # overloading
+   
     def code_in(self, language):
         print(f"{self.name} is writing code in {language}")
-        
 
-# Third: create an instance of a class 
+
+    # dundee methods:  
+    # special methods: methods that have __ in that are provided already
+    # all this methods are provided but in the default implementation, so we have to override
+
+    # 1. __str__:
+    # 
+    def __str__(self):
+        # string representation
+        # this method will be executed whenever the object is converted into string
+        information = f"name = {self.name}, age = {self.age}"
+        return information
+
+    # 2. is equal: 
+    # to compare two objects, by default compare the memory address 
+    def __eq__(self, other):
+        return self.level == other.level
+
+
+
+
+
+#####################################
+
 se = SoftwareEngineer("Max", 20, "Junior", 5000)
+se2 = SoftwareEngineer("Lisa", 25, "Junior", 7000)
 se.code()
 se.code_in("python")
+print(se== se2)
 
 
